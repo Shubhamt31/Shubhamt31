@@ -4,4 +4,5 @@
     <string name="player_one">Player One</string>
     <string name="player_two_label">Player Two: X</string>
     <string name="player_two">Player Two</string>
+    <string name="reset">reset</string>
 </resources>

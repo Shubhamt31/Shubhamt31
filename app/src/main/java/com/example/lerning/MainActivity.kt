@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setupBoard()
-        var reset : Button = findViewById(R.id.reset)
+        val reset : Button = findViewById(R.id.reset)
         reset.setOnClickListener{
             val t = Intent(this@MainActivity, MainActivity::class.java)
             startActivity(t)

@@ -23,7 +23,8 @@
         android:maxLines="1"
         android:textColorLink="#F4511E"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player_one_label" />
+        app:layout_constraintTop_toBottomOf="@+id/player_one_label"
+        android:autofillHints="@string/player_one" />
 
     <TextView
         android:id="@+id/player_one_label"
@@ -55,7 +56,8 @@
         android:inputType="textPersonName"
         android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player_two_label" />
+        app:layout_constraintTop_toBottomOf="@+id/player_two_label"
+        android:autofillHints="@string/player_two" />
 
     <TextView
         android:id="@+id/player_two_label"
@@ -80,7 +82,7 @@
         android:id="@+id/reset"
         android:layout_width="103dp"
         android:layout_height="37dp"
-        android:text="reset"
+        android:text="@string/reset"
         app:backgroundTint="#928E24AA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
