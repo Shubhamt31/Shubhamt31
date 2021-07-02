@@ -23,8 +23,7 @@
         android:maxLines="1"
         android:textColorLink="#F4511E"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player_one_label"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/player_one_label" />
 
     <TextView
         android:id="@+id/player_one_label"
@@ -56,8 +55,7 @@
         android:inputType="textPersonName"
         android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player_two_label"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/player_two_label" />
 
     <TextView
         android:id="@+id/player_two_label"
@@ -77,5 +75,15 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/player_one" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="103dp"
+        android:layout_height="37dp"
+        android:text="reset"
+        app:backgroundTint="#928E24AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,14 @@
 package com.example.lerning
 
+import android.content.Intent
 import android.graphics.Typeface
-import android.graphics.drawable.GradientDrawable
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -36,6 +37,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setupBoard()
+        var reset : Button = findViewById(R.id.reset)
+        reset.setOnClickListener{
+            val t = Intent(this@MainActivity, MainActivity::class.java)
+            startActivity(t)
+            finish()
+        }
 
 
     }
@@ -141,4 +148,6 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "Congratulations! $playerName You Won", Toast.LENGTH_SHORT).show()
 
     }
+
+
 }
